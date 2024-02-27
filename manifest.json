@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Peregram",
+    "version": "1.0",
+    "description": "This extension simply calculates goods cost per gram on perekresto website",
+    "author": "Azat Bariev",
+    "permissions": [
+      "activeTab"
+    ],
+    "action": {
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "content_scripts": [{
+        "js": ["content.js"],
+        "matches": ["https://www.perekrestok.ru/*"]
+    }]
+  }
